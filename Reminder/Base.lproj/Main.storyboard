@@ -207,16 +207,29 @@
                                     <constraint firstItem="zcy-fJ-aJV" firstAttribute="height" secondItem="1cT-mq-KXW" secondAttribute="height" id="yWf-ee-lyJ"/>
                                 </constraints>
                             </view>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mPO-4N-MhV" customClass="ScheduleTimePicker" customModule="Reminder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="642" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="NRH-0Y-85e"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="dateChanged:" destination="Xs9-t6-iFe" eventType="valueChanged" id="bCj-Hd-Cn6"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="lDf-H2-W57" firstAttribute="centerX" secondItem="RYs-AG-WTr" secondAttribute="centerX" id="7EG-Jj-ZIa"/>
+                            <constraint firstItem="4cg-4F-2Ee" firstAttribute="bottom" secondItem="mPO-4N-MhV" secondAttribute="bottom" constant="20" id="Sa5-b2-BeB"/>
+                            <constraint firstItem="mPO-4N-MhV" firstAttribute="leading" secondItem="4cg-4F-2Ee" secondAttribute="leading" id="Wuo-nj-4rT"/>
                             <constraint firstItem="lDf-H2-W57" firstAttribute="centerY" secondItem="RYs-AG-WTr" secondAttribute="centerY" id="ZIg-36-Dry"/>
+                            <constraint firstItem="mPO-4N-MhV" firstAttribute="trailing" secondItem="4cg-4F-2Ee" secondAttribute="trailing" id="zZD-0q-MQV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4cg-4F-2Ee"/>
                     </view>
                     <connections>
                         <outlet property="btnSelectTime" destination="OuE-Cy-CO4" id="LvM-bs-fdo"/>
+                        <outlet property="datePicker" destination="mPO-4N-MhV" id="Cmk-MU-afB"/>
                         <outlet property="txtDescription" destination="nw9-cM-eBz" id="4i3-RS-jLY"/>
                         <outlet property="txtTitle" destination="F4h-qe-hF3" id="BqB-Sv-By8"/>
                     </connections>

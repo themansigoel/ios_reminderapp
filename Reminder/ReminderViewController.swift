@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Reminder
 //
-//  Created by RAHUL GOEL on 22/08/20.
+//  Created by Mansi on 22/08/20.
 //
 
 import UIKit
@@ -12,15 +12,20 @@ class ReminderViewController: UIViewController, CreateNewTableViewCellDelegate {
         let vc = CreateNewReminderViewController.newInstance()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
 
     @IBOutlet weak var tblview: UITableView!
+    
+    var pendingReminders = [NotificationInfo]()
+    var notifManager =  LocalNotificationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        fetchPendingNotifications()
+    }
 }
 
 extension ReminderViewController:UITableViewDelegate,UITableViewDataSource{
@@ -28,7 +33,12 @@ extension ReminderViewController:UITableViewDelegate,UITableViewDataSource{
         if section == 0{
             return 1
         }
-        return 50
+        else if section == 1{
+            return pendingReminders.count
+        }
+        else{
+            return 1
+        }
         
     }
     
@@ -41,6 +51,7 @@ extension ReminderViewController:UITableViewDelegate,UITableViewDataSource{
         }
         else if indexPath.section == 1{
             if let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderInfoCell", for: indexPath) as? ReminderInfoTableViewCell{
+                cell.configure(info: pendingReminders[indexPath.row])
                 return cell
             }
         }
@@ -49,11 +60,14 @@ extension ReminderViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1{
-            self.navigationController?.pushViewController(ReminderDescriptionViewController.newInstance(), animated: true)
+            let descVC = ReminderDescriptionViewController.newInstance()
+            let selectedReminderInfo = pendingReminders[indexPath.row]
+            descVC.info = selectedReminderInfo
+            self.navigationController?.pushViewController(descVC, animated: true)
         }
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -66,9 +80,16 @@ extension ReminderViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = TableViewHeaderView.newInstance()
         if section == 0{
+            view.lblTitle2.isHidden = true
             view.configure(title: "Create Reminder")
-        }else{
+        }else if section == 1{
+            view.lblTitle2.isHidden = false
             view.configure(title: "My Reminders")
+            view.lblTitle2.text = "Total : \(pendingReminders.count)"
+        }
+        else{
+            view.lblTitle2.isHidden = true
+            view.configure(title: "Today's Weather")
         }
         return view
     }
@@ -77,6 +98,13 @@ extension ReminderViewController:UITableViewDelegate,UITableViewDataSource{
         return 50
     }
     
-    
+    func fetchPendingNotifications(){
+        notifManager.getListOfPendingNotifications { [weak self](notifcations) in
+            self?.pendingReminders = notifcations
+            DispatchQueue.main.async {
+                self?.tblview.reloadData()
+            }
+        }
+    }
 }
 

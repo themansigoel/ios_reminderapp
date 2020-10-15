@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Reminder
 //
-//  Created by RAHUL GOEL on 22/08/20.
+//  Created by Mansi on 22/08/20.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  TableViewHeaderView.swift
 //  Reminder
 //
-//  Created by RAHUL GOEL on 06/09/20.
+//  Created by Mansi on 06/09/20.
 //
 
 import UIKit
@@ -10,6 +10,7 @@ import UIKit
 class TableViewHeaderView: UIView {
 
     @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblTitle2: UILabel!
     
     func configure(title : String){
         lblTitle.text = title

@@ -2,7 +2,7 @@
 //  CreateNewTableViewCell.swift
 //  Reminder
 //
-//  Created by RAHUL GOEL on 30/08/20.
+//  Created by Mansi on 30/08/20.
 //
 
 import UIKit

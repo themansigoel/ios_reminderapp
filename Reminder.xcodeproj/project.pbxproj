@@ -13,7 +13,10 @@
 		1343FCB7250540F300B58E7F /* TableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1343FCB6250540F300B58E7F /* TableViewHeaderView.xib */; };
 		134E1712250699C000DB22A3 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E1711250699C000DB22A3 /* LocalNotificationManager.swift */; };
 		1361F82E2500082500EA6C3C /* CreateNewReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361F82D2500082500EA6C3C /* CreateNewReminderViewController.swift */; };
+		136DF50E252242770003940B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DF50D252242770003940B /* Utility.swift */; };
 		138B386C2501D04D00C5B9CA /* ReminderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B386B2501D04D00C5B9CA /* ReminderInfoTableViewCell.swift */; };
+		138BC97E251BA95A00E7A479 /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BC97D251BA95A00E7A479 /* NotificationInfo.swift */; };
+		139EB63125161E3B00006290 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EB63025161E3B00006290 /* WeatherTableViewCell.swift */; };
 		13B27DAF2503F72E00103ADD /* ReminderDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B27DAE2503F72E00103ADD /* ReminderDescriptionViewController.swift */; };
 		13EF662824F12852005D0DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF662724F12852005D0DA1 /* AppDelegate.swift */; };
 		13EF662A24F12852005D0DA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF662924F12852005D0DA1 /* SceneDelegate.swift */; };
@@ -41,7 +44,10 @@
 		1343FCB6250540F300B58E7F /* TableViewHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeaderView.xib; sourceTree = "<group>"; };
 		134E1711250699C000DB22A3 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		1361F82D2500082500EA6C3C /* CreateNewReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewReminderViewController.swift; sourceTree = "<group>"; };
+		136DF50D252242770003940B /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		138B386B2501D04D00C5B9CA /* ReminderInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderInfoTableViewCell.swift; sourceTree = "<group>"; };
+		138BC97D251BA95A00E7A479 /* NotificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInfo.swift; sourceTree = "<group>"; };
+		139EB63025161E3B00006290 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		13B27DAE2503F72E00103ADD /* ReminderDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDescriptionViewController.swift; sourceTree = "<group>"; };
 		13EF662424F12852005D0DA1 /* Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EF662724F12852005D0DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +116,9 @@
 				1343FCB6250540F300B58E7F /* TableViewHeaderView.xib */,
 				134E1711250699C000DB22A3 /* LocalNotificationManager.swift */,
 				13414D57250CC2E8009F5DB5 /* ScheduleTimePicker.swift */,
+				139EB63025161E3B00006290 /* WeatherTableViewCell.swift */,
+				138BC97D251BA95A00E7A479 /* NotificationInfo.swift */,
+				136DF50D252242770003940B /* Utility.swift */,
 			);
 			path = Reminder;
 			sourceTree = "<group>";
@@ -226,9 +235,12 @@
 			files = (
 				13B27DAF2503F72E00103ADD /* ReminderDescriptionViewController.swift in Sources */,
 				13414D58250CC2E8009F5DB5 /* ScheduleTimePicker.swift in Sources */,
+				139EB63125161E3B00006290 /* WeatherTableViewCell.swift in Sources */,
 				131DEA3B24FBEE5300E6E925 /* CreateNewTableViewCell.swift in Sources */,
+				138BC97E251BA95A00E7A479 /* NotificationInfo.swift in Sources */,
 				134E1712250699C000DB22A3 /* LocalNotificationManager.swift in Sources */,
 				138B386C2501D04D00C5B9CA /* ReminderInfoTableViewCell.swift in Sources */,
+				136DF50E252242770003940B /* Utility.swift in Sources */,
 				1343FCB5250540D500B58E7F /* TableViewHeaderView.swift in Sources */,
 				13EF662C24F12852005D0DA1 /* ReminderViewController.swift in Sources */,
 				1361F82E2500082500EA6C3C /* CreateNewReminderViewController.swift in Sources */,

@@ -2,7 +2,7 @@
 //  ReminderInfoTableViewCell.swift
 //  Reminder
 //
-//  Created by RAHUL GOEL on 04/09/20.
+//  Created by Mansi on 04/09/20.
 //
 
 import UIKit
@@ -13,6 +13,11 @@ class ReminderInfoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    func configure(info : NotificationInfo){
+        lblHeading.text = info.title
+        lblTime.text = Utility.getDateFormatter().string(from: info.time)
     }
 
    

@@ -12,12 +12,23 @@
 		1343FCB5250540D500B58E7F /* TableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343FCB4250540D500B58E7F /* TableViewHeaderView.swift */; };
 		1343FCB7250540F300B58E7F /* TableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1343FCB6250540F300B58E7F /* TableViewHeaderView.xib */; };
 		134E1712250699C000DB22A3 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E1711250699C000DB22A3 /* LocalNotificationManager.swift */; };
+		1353CF8B25AB530700A042CF /* RegisterationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353CF8A25AB530700A042CF /* RegisterationInfo.swift */; };
+		1353CF8E25AB56BA00A042CF /* Register+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353CF8C25AB56BA00A042CF /* Register+CoreDataClass.swift */; };
+		1353CF8F25AB56BA00A042CF /* Register+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353CF8D25AB56BA00A042CF /* Register+CoreDataProperties.swift */; };
 		1361F82E2500082500EA6C3C /* CreateNewReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361F82D2500082500EA6C3C /* CreateNewReminderViewController.swift */; };
+		1364CE6425A5E84600CECB86 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364CE6325A5E84600CECB86 /* RegisterViewController.swift */; };
+		1364CE6625A5ECED00CECB86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364CE6525A5ECED00CECB86 /* LoginViewController.swift */; };
+		13693F9925A9976A0024EDC0 /* Login+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13693F9725A9976A0024EDC0 /* Login+CoreDataClass.swift */; };
+		13693F9A25A9976A0024EDC0 /* Login+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13693F9825A9976A0024EDC0 /* Login+CoreDataProperties.swift */; };
 		136DF50E252242770003940B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DF50D252242770003940B /* Utility.swift */; };
+		137229DB25A9B90300D6CF8F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137229DA25A9B90300D6CF8F /* LoginManager.swift */; };
 		138B386C2501D04D00C5B9CA /* ReminderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B386B2501D04D00C5B9CA /* ReminderInfoTableViewCell.swift */; };
 		138BC97E251BA95A00E7A479 /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BC97D251BA95A00E7A479 /* NotificationInfo.swift */; };
 		139EB63125161E3B00006290 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EB63025161E3B00006290 /* WeatherTableViewCell.swift */; };
 		13B27DAF2503F72E00103ADD /* ReminderDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B27DAE2503F72E00103ADD /* ReminderDescriptionViewController.swift */; };
+		13B7BBBD25A8880B008F2A37 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B7BBBC25A8880A008F2A37 /* CoreData.framework */; };
+		13B7BBC225A888DB008F2A37 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B7BBC125A888DB008F2A37 /* CoreDataManager.swift */; };
+		13B7BBC525A88922008F2A37 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13B7BBC325A88922008F2A37 /* CoreDataModel.xcdatamodeld */; };
 		13EF662824F12852005D0DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF662724F12852005D0DA1 /* AppDelegate.swift */; };
 		13EF662A24F12852005D0DA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF662924F12852005D0DA1 /* SceneDelegate.swift */; };
 		13EF662C24F12852005D0DA1 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF662B24F12852005D0DA1 /* ReminderViewController.swift */; };
@@ -43,12 +54,23 @@
 		1343FCB4250540D500B58E7F /* TableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeaderView.swift; sourceTree = "<group>"; };
 		1343FCB6250540F300B58E7F /* TableViewHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeaderView.xib; sourceTree = "<group>"; };
 		134E1711250699C000DB22A3 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		1353CF8A25AB530700A042CF /* RegisterationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationInfo.swift; sourceTree = "<group>"; };
+		1353CF8C25AB56BA00A042CF /* Register+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Register+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1353CF8D25AB56BA00A042CF /* Register+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Register+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1361F82D2500082500EA6C3C /* CreateNewReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewReminderViewController.swift; sourceTree = "<group>"; };
+		1364CE6325A5E84600CECB86 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1364CE6525A5ECED00CECB86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		13693F9725A9976A0024EDC0 /* Login+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+CoreDataClass.swift"; sourceTree = "<group>"; };
+		13693F9825A9976A0024EDC0 /* Login+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		136DF50D252242770003940B /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		137229DA25A9B90300D6CF8F /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		138B386B2501D04D00C5B9CA /* ReminderInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderInfoTableViewCell.swift; sourceTree = "<group>"; };
 		138BC97D251BA95A00E7A479 /* NotificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInfo.swift; sourceTree = "<group>"; };
 		139EB63025161E3B00006290 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		13B27DAE2503F72E00103ADD /* ReminderDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDescriptionViewController.swift; sourceTree = "<group>"; };
+		13B7BBBC25A8880A008F2A37 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		13B7BBC125A888DB008F2A37 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		13B7BBC425A88922008F2A37 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		13EF662424F12852005D0DA1 /* Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EF662724F12852005D0DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13EF662924F12852005D0DA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B7BBBD25A8880B008F2A37 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +103,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13B7BBBB25A8880A008F2A37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13B7BBBC25A8880A008F2A37 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13B7BBBE25A88836008F2A37 /* core data */ = {
+			isa = PBXGroup;
+			children = (
+				13693F9725A9976A0024EDC0 /* Login+CoreDataClass.swift */,
+				13693F9825A9976A0024EDC0 /* Login+CoreDataProperties.swift */,
+				13B7BBC125A888DB008F2A37 /* CoreDataManager.swift */,
+				1353CF8C25AB56BA00A042CF /* Register+CoreDataClass.swift */,
+				1353CF8D25AB56BA00A042CF /* Register+CoreDataProperties.swift */,
+				13B7BBC325A88922008F2A37 /* CoreDataModel.xcdatamodeld */,
+				137229DA25A9B90300D6CF8F /* LoginManager.swift */,
+			);
+			path = "core data";
+			sourceTree = "<group>";
+		};
 		13EF661B24F12852005D0DA1 = {
 			isa = PBXGroup;
 			children = (
+				13B7BBBE25A88836008F2A37 /* core data */,
 				13EF662624F12852005D0DA1 /* Reminder */,
 				13EF663D24F1285F005D0DA1 /* ReminderTests */,
 				13EF662524F12852005D0DA1 /* Products */,
+				13B7BBBB25A8880A008F2A37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +166,9 @@
 				139EB63025161E3B00006290 /* WeatherTableViewCell.swift */,
 				138BC97D251BA95A00E7A479 /* NotificationInfo.swift */,
 				136DF50D252242770003940B /* Utility.swift */,
+				1364CE6325A5E84600CECB86 /* RegisterViewController.swift */,
+				1364CE6525A5ECED00CECB86 /* LoginViewController.swift */,
+				1353CF8A25AB530700A042CF /* RegisterationInfo.swift */,
 			);
 			path = Reminder;
 			sourceTree = "<group>";
@@ -236,15 +286,25 @@
 				13B27DAF2503F72E00103ADD /* ReminderDescriptionViewController.swift in Sources */,
 				13414D58250CC2E8009F5DB5 /* ScheduleTimePicker.swift in Sources */,
 				139EB63125161E3B00006290 /* WeatherTableViewCell.swift in Sources */,
+				1364CE6625A5ECED00CECB86 /* LoginViewController.swift in Sources */,
+				13693F9925A9976A0024EDC0 /* Login+CoreDataClass.swift in Sources */,
+				137229DB25A9B90300D6CF8F /* LoginManager.swift in Sources */,
+				13693F9A25A9976A0024EDC0 /* Login+CoreDataProperties.swift in Sources */,
+				13B7BBC225A888DB008F2A37 /* CoreDataManager.swift in Sources */,
 				131DEA3B24FBEE5300E6E925 /* CreateNewTableViewCell.swift in Sources */,
 				138BC97E251BA95A00E7A479 /* NotificationInfo.swift in Sources */,
 				134E1712250699C000DB22A3 /* LocalNotificationManager.swift in Sources */,
 				138B386C2501D04D00C5B9CA /* ReminderInfoTableViewCell.swift in Sources */,
 				136DF50E252242770003940B /* Utility.swift in Sources */,
 				1343FCB5250540D500B58E7F /* TableViewHeaderView.swift in Sources */,
+				1364CE6425A5E84600CECB86 /* RegisterViewController.swift in Sources */,
+				1353CF8B25AB530700A042CF /* RegisterationInfo.swift in Sources */,
+				1353CF8E25AB56BA00A042CF /* Register+CoreDataClass.swift in Sources */,
 				13EF662C24F12852005D0DA1 /* ReminderViewController.swift in Sources */,
+				13B7BBC525A88922008F2A37 /* CoreDataModel.xcdatamodeld in Sources */,
 				1361F82E2500082500EA6C3C /* CreateNewReminderViewController.swift in Sources */,
 				13EF662824F12852005D0DA1 /* AppDelegate.swift in Sources */,
+				1353CF8F25AB56BA00A042CF /* Register+CoreDataProperties.swift in Sources */,
 				13EF662A24F12852005D0DA1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +574,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		13B7BBC325A88922008F2A37 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				13B7BBC425A88922008F2A37 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 13B7BBC425A88922008F2A37 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 13EF661C24F12852005D0DA1 /* Project object */;
 }

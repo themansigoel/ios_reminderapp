@@ -20,6 +20,7 @@ class RegisterViewController: UIViewController {
     @IBAction func registerPressed(_ sender: Any) {
         validateData()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +33,10 @@ class RegisterViewController: UIViewController {
         
         
         
+    }
+    class func newInstance()->RegisterViewController{
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        return storyboard.instantiateViewController(identifier: "RegisterViewController") as! RegisterViewController
     }
     func validateData()  {
         //

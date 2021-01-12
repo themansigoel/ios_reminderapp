@@ -15,16 +15,24 @@ class LoginViewController: UIViewController {
         validateData()
         
     }
+    @IBAction func registerPressed(_ sender: Any) {
+        let vc = RegisterViewController.newInstance()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+  
     func loginCredentials(){
-        CoreDataManager.shared.fetchLoginCredentials(userName: username.text ?? "", password: password.text ?? "") { (isCredentialsValid) in
+        CoreDataManager.shared.fetchLoginCredentials(userName: username.text ?? "", password: password.text ?? "") {[weak self] (isCredentialsValid) in
             print("Valid \(isCredentialsValid)")
             if (isCredentialsValid == true ){
-                
+                Utility.setEmailInUserDefault(email : self?.username.text ?? "")
+               let vc = ReminderViewController.newInstance()
+                self?.navigationController?.pushViewController(vc, animated: true)
+            }
+            else{
+                self?.showAlert(message: "Please Enter valid username and password ", title: "Invalid")
             }
         }
     }

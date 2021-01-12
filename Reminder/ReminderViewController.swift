@@ -41,7 +41,10 @@ extension ReminderViewController:UITableViewDelegate,UITableViewDataSource{
         }
         
     }
-    
+    class func newInstance()->ReminderViewController{
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        return storyboard.instantiateViewController(identifier: "ReminderViewController") as! ReminderViewController
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0{
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CreateNewCell", for: indexPath) as? CreateNewTableViewCell{

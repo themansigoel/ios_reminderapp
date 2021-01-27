@@ -18,8 +18,6 @@
 		1361F82E2500082500EA6C3C /* CreateNewReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361F82D2500082500EA6C3C /* CreateNewReminderViewController.swift */; };
 		1364CE6425A5E84600CECB86 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364CE6325A5E84600CECB86 /* RegisterViewController.swift */; };
 		1364CE6625A5ECED00CECB86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364CE6525A5ECED00CECB86 /* LoginViewController.swift */; };
-		13693F9925A9976A0024EDC0 /* Login+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13693F9725A9976A0024EDC0 /* Login+CoreDataClass.swift */; };
-		13693F9A25A9976A0024EDC0 /* Login+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13693F9825A9976A0024EDC0 /* Login+CoreDataProperties.swift */; };
 		136DF50E252242770003940B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DF50D252242770003940B /* Utility.swift */; };
 		137229DB25A9B90300D6CF8F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137229DA25A9B90300D6CF8F /* LoginManager.swift */; };
 		138B386C2501D04D00C5B9CA /* ReminderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B386B2501D04D00C5B9CA /* ReminderInfoTableViewCell.swift */; };
@@ -60,8 +58,6 @@
 		1361F82D2500082500EA6C3C /* CreateNewReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewReminderViewController.swift; sourceTree = "<group>"; };
 		1364CE6325A5E84600CECB86 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1364CE6525A5ECED00CECB86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		13693F9725A9976A0024EDC0 /* Login+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+CoreDataClass.swift"; sourceTree = "<group>"; };
-		13693F9825A9976A0024EDC0 /* Login+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		136DF50D252242770003940B /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		137229DA25A9B90300D6CF8F /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		138B386B2501D04D00C5B9CA /* ReminderInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderInfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -114,8 +110,6 @@
 		13B7BBBE25A88836008F2A37 /* core data */ = {
 			isa = PBXGroup;
 			children = (
-				13693F9725A9976A0024EDC0 /* Login+CoreDataClass.swift */,
-				13693F9825A9976A0024EDC0 /* Login+CoreDataProperties.swift */,
 				13B7BBC125A888DB008F2A37 /* CoreDataManager.swift */,
 				1353CF8C25AB56BA00A042CF /* Register+CoreDataClass.swift */,
 				1353CF8D25AB56BA00A042CF /* Register+CoreDataProperties.swift */,
@@ -287,9 +281,7 @@
 				13414D58250CC2E8009F5DB5 /* ScheduleTimePicker.swift in Sources */,
 				139EB63125161E3B00006290 /* WeatherTableViewCell.swift in Sources */,
 				1364CE6625A5ECED00CECB86 /* LoginViewController.swift in Sources */,
-				13693F9925A9976A0024EDC0 /* Login+CoreDataClass.swift in Sources */,
 				137229DB25A9B90300D6CF8F /* LoginManager.swift in Sources */,
-				13693F9A25A9976A0024EDC0 /* Login+CoreDataProperties.swift in Sources */,
 				13B7BBC225A888DB008F2A37 /* CoreDataManager.swift in Sources */,
 				131DEA3B24FBEE5300E6E925 /* CreateNewTableViewCell.swift in Sources */,
 				138BC97E251BA95A00E7A479 /* NotificationInfo.swift in Sources */,

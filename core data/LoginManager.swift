@@ -10,10 +10,10 @@ import CoreData
 
 extension CoreDataManager{
     func test(){
-     let _ = NSEntityDescription.insertNewObject(forEntityName: "Login", into: privateContext) as? Login
+     let _ = NSEntityDescription.insertNewObject(forEntityName: "Login", into: privateContext) as? Register
 }
     
-    func saveUser(info: RegisterationInfo?)
+    func saveUser(info: RegisterationInfo?) -> Bool
     {
         let register = NSEntityDescription.insertNewObject(forEntityName: "Register", into: privateContext) as? Register
         
@@ -25,13 +25,13 @@ extension CoreDataManager{
         register?.city = info?.city
         register?.address = info?.address
        saveContext()
-        
+        return true
     }
     
-    func fetchLoginCredentials(userName:String, password:String, completionHandler: @escaping((Bool)-> Void)){
+    func fetchLoginCredentials(email:String, password:String, completionHandler: @escaping((Bool)-> Void)){
         do{
-            let fetchRequest : NSFetchRequest<Login> = Login.fetchRequest()
-            fetchRequest.predicate = NSPredicate(format: "username = %@", userName)
+            let fetchRequest : NSFetchRequest<Register> = Register.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "email = %@", email)
             
             let fetchResults = try privateContext.fetch(fetchRequest)
             print("fetchResults : \(fetchResults.count)")
@@ -47,6 +47,7 @@ extension CoreDataManager{
             completionHandler(false)
         }
         catch{
+            completionHandler(false)
             print("error",error)
         }
     }

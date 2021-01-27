@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+
 class Utility{
     class func getDateFormatter()->DateFormatter{
         let dateFormatter = DateFormatter()

@@ -34,7 +34,6 @@ extension CoreDataManager{
             fetchRequest.predicate = NSPredicate(format: "email = %@", email)
             
             let fetchResults = try privateContext.fetch(fetchRequest)
-            print("fetchResults : \(fetchResults.count)")
             for cred in fetchResults{
                 if let passwd = cred.password{
                     if passwd == password{
@@ -44,11 +43,9 @@ extension CoreDataManager{
                     }
                 }
             }
-            completionHandler(false)
         }
         catch{
             completionHandler(false)
-            print("error",error)
         }
     }
 }

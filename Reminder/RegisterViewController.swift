@@ -19,24 +19,19 @@ class RegisterViewController: UIViewController {
     
     @IBAction func registerPressed(_ sender: Any) {
         validateData()
-        
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
     func loginCredentials(){
-        
         let obj = RegisterationInfo(firstname: firstname.text ?? "", lastname: lastname.text ?? "", email: email.text ?? "", password: password.text ?? "", mobile: mobile.text ?? "", city: city.text ?? "", address: address.text ?? "")
         let register = CoreDataManager.shared.saveUser(info: obj)
         if (register == true){
             showAlertForSuccessfulRegistration(message: "Register Sussesful", title: "Done")
         }
-        
-        
         
     }
     class func newInstance()->RegisterViewController{

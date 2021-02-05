@@ -16,7 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let email =  Utility.getEmailFromUserDefault()
          if (!email.isEmpty){
-             self.window?.rootViewController = ReminderViewController.newInstance()
+            let navVC = UINavigationController(rootViewController: ReminderViewController.newInstance())
+             self.window?.rootViewController = navVC
          }
 
         guard let _ = (scene as? UIWindowScene) else { return }

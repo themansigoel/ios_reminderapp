@@ -6,18 +6,20 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ReminderViewController: UIViewController, CreateNewTableViewCellDelegate {
     func createNewPressed(id: Int) {
         let vc = CreateNewReminderViewController.newInstance()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
+    
     @IBOutlet weak var tblview: UITableView!
     
     var pendingReminders = [NotificationInfo]()
     var notifManager =  LocalNotificationManager()
-    
+    var locationManager: CLLocationManager?
+    //var locationManager = CLLocationManager?
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -47,14 +49,20 @@ extension ReminderViewController:UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0{
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "CreateNewCell", for: indexPath) as? CreateNewTableViewCell{
-            cell.delegate = self
-            return cell
-        }
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "CreateNewCell", for: indexPath) as? CreateNewTableViewCell{
+                cell.delegate = self
+                return cell
+            }
         }
         else if indexPath.section == 1{
             if let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderInfoCell", for: indexPath) as? ReminderInfoTableViewCell{
                 cell.configure(info: pendingReminders[indexPath.row])
+                return cell
+            }
+        }
+        else if indexPath.section == 2{
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath) as? WeatherTableViewCell{
+                getUserCurrentLocation()
                 return cell
             }
         }
@@ -75,7 +83,10 @@ extension ReminderViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0{
-         return 100
+            return 100
+        }
+        else if indexPath.section == 1{
+            return 100
         }
         return 120
     }
@@ -110,4 +121,29 @@ extension ReminderViewController:UITableViewDelegate,UITableViewDataSource{
         }
     }
 }
-
+extension ReminderViewController : CLLocationManagerDelegate{
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .notDetermined {
+        
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last{
+            let lat = location.coordinate.latitude
+            let lon = location.coordinate.longitude
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        
+    }
+    
+    func getUserCurrentLocation(){
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.requestLocation()
+    }
+    
+}

@@ -47,7 +47,6 @@ class LocalNotificationManager{
 
         // choose a random identifier
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        print("hello")
         // add our notification request
         UNUserNotificationCenter.current().add(request)
     }

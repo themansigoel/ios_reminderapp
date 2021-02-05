@@ -21,17 +21,16 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true
         addTapGesture()
     }
     override func viewDidAppear(_ animated: Bool) {
            super.viewDidAppear(animated)
            email.becomeFirstResponder()
+        self.navigationController?.isNavigationBarHidden = true
        }
   
     func loginCredentials(){
         CoreDataManager.shared.fetchLoginCredentials(email: email.text ?? "", password: password.text ?? "") {[weak self] (isCredentialsValid) in
-            print("Valid \(isCredentialsValid)")
             if (isCredentialsValid == true ){
                 Utility.setEmailInUserDefault(email : self?.email.text ?? "")
                let vc = ReminderViewController.newInstance()
